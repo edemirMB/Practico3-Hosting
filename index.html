@@ -1,61 +1,372 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Práctico 3 - Hosting Web</title>
+    <title>Práctico #3 - Hosting Web</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #1565c0;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header h2 {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        .contenedor {
+            width: 85%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .datos {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0px 2px 8px #cccccc;
+        }
+
+        .datos h2 {
+            color: #1565c0;
+            margin-top: 0;
+        }
+
+        .seccion {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px #cccccc;
+        }
+
+        .seccion h2 {
+            color: #1565c0;
+            border-bottom: 2px solid #1565c0;
+            padding-bottom: 8px;
+        }
+
+        .tipos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .tarjeta {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 180px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th {
+            background-color: #1565c0;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #1565c0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .estado {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-left: 5px solid #2e7d32;
+            margin-top: 15px;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <h1>Mi servidor de Hosting Web</h1>
+    <header>
+        <h1>Servicios de Internet / Intranet</h1>
+        <h2>Práctico #3 - Tecnologías Cloud - Hosting WEB</h2>
+    </header>
 
-    <h2>Práctico #3 - Tecnologías Cloud - Hosting WEB</h2>
 
-    <hr>
+    <div class="contenedor">
 
-    <h3>¿Qué es el Hosting Web?</h3>
+        <div class="datos">
 
-    <p>
-        El hosting web es un servicio que permite almacenar
-        los archivos de una página web en un servidor conectado
-        a Internet.
-    </p>
+            <h2>Datos del estudiante</h2>
 
-    <h3>Tipos de Hosting</h3>
+            <p><strong>Nombre:</strong> Mayta Baltazar Edemir</p>
 
-    <ul>
-        <li>Hosting Compartido</li>
-        <li>VPS</li>
-        <li>Servidor Dedicado</li>
-        <li>Cloud Hosting</li>
-    </ul>
+            <p><strong>Carrera:</strong> Ingeniería de Sistemas</p>
 
-    <h3>Cloud Computing</h3>
+            <p><strong>Asignatura:</strong> Servicios de Internet / Intranet</p>
 
-    <p>
-        Cloud Computing permite utilizar servidores,
-        almacenamiento, redes y otros recursos informáticos
-        mediante Internet.
-    </p>
+            <p><strong>Docente:</strong> Ing. Marco Antonio Arenas Porcel</p>
 
-    <h3>Proveedores Cloud</h3>
+            <p><strong>Práctico:</strong> #3 - Tecnologías Cloud - Hosting WEB</p>
 
-    <ol>
-        <li>Amazon Web Services - AWS</li>
-        <li>Microsoft Azure</li>
-        <li>Google Cloud Platform</li>
-        <li>Oracle Cloud</li>
-        <li>DigitalOcean</li>
-    </ol>
+            <p><strong>Gestión:</strong> 2026</p>
 
-    <hr>
+        </div>
 
-    <p>
-        Página desarrollada para el Práctico #3
-        de Servicios de Internet/Intranet.
-    </p>
+
+  
+
+        <div class="seccion">
+
+            <h2>¿Qué es el Hosting Web?</h2>
+
+            <p>
+                El Hosting Web es un servicio que permite almacenar los archivos,
+                imágenes y recursos de una página web dentro de un servidor
+                conectado a Internet.
+            </p>
+
+            <p>
+                Gracias al hosting, los usuarios pueden acceder a una página web
+                mediante una dirección o URL desde cualquier dispositivo
+                conectado a Internet.
+            </p>
+
+        </div>
+
+
+     
+
+        <div class="seccion">
+
+            <h2>Tipos de Hosting</h2>
+
+            <div class="tipos">
+
+                <div class="tarjeta">
+                    <h3>Hosting Compartido</h3>
+                    <p>Varios sitios web comparten los recursos de un mismo servidor.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>VPS</h3>
+                    <p>Servidor privado virtual con recursos independientes.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Servidor Dedicado</h3>
+                    <p>Servidor completo destinado a un solo cliente.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Cloud Hosting</h3>
+                    <p>Utiliza recursos de infraestructura disponibles en la nube.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    
+
+        <div class="seccion">
+
+            <h2>Cloud Computing</h2>
+
+            <p>
+                Cloud Computing permite utilizar recursos informáticos como
+                servidores, almacenamiento, redes, bases de datos y aplicaciones
+                mediante Internet.
+            </p>
+
+            <p>
+                Esto permite utilizar infraestructura tecnológica sin necesidad
+                de adquirir físicamente todos los equipos.
+            </p>
+
+        </div>
+
+
+
+
+        <div class="seccion">
+
+            <h2>Infrastructure as a Service - IaaS</h2>
+
+            <p>
+                IaaS significa <strong>Infrastructure as a Service</strong>.
+                En este modelo, un proveedor Cloud proporciona recursos
+                virtualizados como servidores, almacenamiento y redes.
+            </p>
+
+            <p>
+                El usuario puede administrar el sistema operativo, instalar
+                servicios y configurar sus aplicaciones.
+            </p>
+
+        </div>
+
+
+
+        <div class="seccion">
+
+            <h2>Principales proveedores Cloud</h2>
+
+            <table>
+
+                <tr>
+                    <th>Proveedor</th>
+                    <th>Servicio de cómputo</th>
+                </tr>
+
+                <tr>
+                    <td>Amazon Web Services</td>
+                    <td>Amazon EC2</td>
+                </tr>
+
+                <tr>
+                    <td>Microsoft Azure</td>
+                    <td>Azure Virtual Machines</td>
+                </tr>
+
+                <tr>
+                    <td>Google Cloud Platform</td>
+                    <td>Compute Engine</td>
+                </tr>
+
+                <tr>
+                    <td>Oracle Cloud</td>
+                    <td>OCI Compute</td>
+                </tr>
+
+                <tr>
+                    <td>DigitalOcean</td>
+                    <td>Droplets</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+
+
+        <div class="seccion">
+
+            <h2>Implementación del Hosting Web</h2>
+
+            <p>
+                Para la implementación del presente práctico se utilizó
+                <strong>GitHub Pages</strong>.
+            </p>
+
+            <p>
+                El archivo principal del sitio es
+                <strong>index.html</strong>, el cual fue almacenado en un
+                repositorio de GitHub y posteriormente publicado mediante
+                GitHub Pages.
+            </p>
+
+            <div class="estado">
+
+                <strong>Estado del sitio:</strong>
+                Publicado correctamente en Internet mediante HTTPS.
+
+            </div>
+
+        </div>
+
+
+
+        <div class="seccion">
+
+            <h2>Administración del sitio</h2>
+
+            <p>
+                La página web se administra mediante Git y GitHub.
+                Cuando se realiza una modificación en el archivo
+                <strong>index.html</strong>, los cambios son enviados al
+                repositorio mediante comandos Git.
+            </p>
+
+            <p>
+                Posteriormente GitHub Pages actualiza automáticamente
+                la página publicada.
+            </p>
+
+        </div>
+
+
+
+        <div class="seccion">
+
+            <h2>Conclusión</h2>
+
+            <p>
+                Mediante este práctico se comprendió el funcionamiento del
+                Hosting Web, los diferentes tipos de alojamiento existentes
+                y la relación que existe entre Hosting, VPS, Cloud Computing
+                e IaaS.
+            </p>
+
+            <p>
+                Además, se realizó la implementación práctica de un sitio web,
+                publicándolo en Internet mediante GitHub Pages.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            Universidad San Francisco Xavier de Chuquisaca
+        </p>
+
+        <p>
+            Ingeniería de Sistemas - Servicios de Internet / Intranet
+        </p>
+
+        <p>
+            Gestión 2026
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
